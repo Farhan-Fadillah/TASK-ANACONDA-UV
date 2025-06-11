@@ -5,7 +5,8 @@
 **Batch** : 9  
 **No. Absen** : 9.008.DB2025
 
-Halo Eco Techno Leaders! 👋  
+**Halo Eco Techno Leaders! 👋** 
+
 Berikut adalah panduan lengkap untuk setup environment data science/AI menggunakan Anaconda dan UV Environment. Tutorial ini dibuat dengan penjelasan step-by-step yang mudah diikuti.
 
 ---
@@ -45,40 +46,48 @@ UV adalah alat manajemen lingkungan Python yang memungkinkan pembuatan, pengelol
 
 ## 🐍 Bagian 1: Instalasi Anaconda
 
-1. Download Installer Anaconda
-**Apa**: File installer untuk memasang Anaconda ke komputer Anda.
-**Kenapa**: Anaconda menyediakan Python dan paket data science siap pakai dalam satu instalasi.
-Langkah-langkah:
+**1. Download Installer Anaconda**
+   **Apa**
+   File installer untuk memasang Anaconda ke komputer Anda.
+
+   **Kenapa**
+   Anaconda menyediakan Python dan paket data science siap pakai dalam satu instalasi.
+
+   Langkah-langkah:
     - Buka https://www.anaconda.com/products/distribution
     - Pilih versi sesuai OS Anda (Windows/macOS/Linux)
     - Klik tombol Download
- 
-Do's:
+   
+   Do's:
 	- Download dari situs resmi Anaconda
 	- Simpan installer di folder yang mudah diakses
 Don'ts:
 	- Jangan download dari sumber tidak resmi
 	- Jangan simpan di folder system
 
-2. Jalankan Installer Anaconda
-Apa: Proses pemasangan Anaconda ke sistem Anda.
-Kenapa: Untuk mendapatkan Python dan semua paket data science yang dibutuhkan.
-Langkah-langkah:
+**2. Jalankan Installer Anaconda**
+   **Apa**
+   Proses pemasangan Anaconda ke sistem Anda.
+
+   **Kenapa**
+   Untuk mendapatkan Python dan semua paket data science yang dibutuhkan.
+
+   Langkah-langkah:
 	- Buka file installer yang sudah didownload
 	- Ikuti wizard instalasi
 	- Pilih opsi "Add Anaconda to PATH" (opsional)
-  Do's:
+   Do's:
 	- Gunakan pengaturan default jika tidak yakin
 	- Centang opsi PATH jika ingin bisa diakses dari terminal manapun
-  Don'ts:
+   Don'ts:
 	- Jangan ubah direktori instalasi ke folder sistem
 	- Jangan batalkan proses instalasi di tengah jalan
 
-3. Verifikasi Anaconda Terinstall dan Dapat Diakses
-    Apa?
+**4. Verifikasi Anaconda Terinstall dan Dapat Diakses**
+    **Apa?**
     Verifikasi ini memastikan bahwa Anaconda sudah benar-benar terpasang dan bisa dipanggil dari terminal.
 
-    Kenapa?
+    **Kenapa?**
     Agar kita tidak menemui masalah di langkah selanjutnya saat menggunakan conda atau Python dari Anaconda.
 
     Langkah-langkah:
@@ -92,11 +101,11 @@ Langkah-langkah:
     Don'ts:
     - Jangan abaikan error atau tidak muncul versi, cek pemasangan kembali.
 
-4. Konfigurasi Variabel Lingkungan PATH Conda dan Anaconda
-    Apa?
+**5. Konfigurasi Variabel Lingkungan PATH Conda dan Anaconda**
+    **Apa?**
     Pengaturan variabel lingkungan PATH supaya perintah conda dan python dari Anaconda dapat diakses dari terminal manapun.
 
-    Kenapa?
+    **Kenapa?**
     Agar kita tidak harus selalu membuka Anaconda Navigator atau terminal khusus untuk menjalankan conda atau Python.
 
     Langkah-langkah:
@@ -117,11 +126,11 @@ Langkah-langkah:
     - Hati-hati saat edit variabel lingkungan.
     
   
-5. Membuat Lingkungan Conda Baru
-    Apa?
+**6. Membuat Lingkungan Conda Baru**
+    **Apa?**
     Membuat environment Conda baru adalah membuat ruang kerja terpisah untuk project yang berbeda.
 
-    Kenapa?
+    **Kenapa?**
     Untuk menghindari bentrok antar versi Python atau paket yang digunakan oleh berbagai proyek.
 
     Langkah-langkah:
