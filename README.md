@@ -46,8 +46,8 @@ UV adalah alat manajemen lingkungan Python yang memungkinkan pembuatan, pengelol
 ## 🐍 Bagian 1: Instalasi Anaconda
 
 1. Download Installer Anaconda
-Apa: File installer untuk memasang Anaconda ke komputer Anda.
-Kenapa: Anaconda menyediakan Python dan paket data science siap pakai dalam satu instalasi.
+**Apa**: File installer untuk memasang Anaconda ke komputer Anda.
+**Kenapa**: Anaconda menyediakan Python dan paket data science siap pakai dalam satu instalasi.
 Langkah-langkah:
     - Buka https://www.anaconda.com/products/distribution
     - Pilih versi sesuai OS Anda (Windows/macOS/Linux)
@@ -164,6 +164,7 @@ Langkah-langkah:
     
     Kenapa?
     Inisialisasi proyek yang benar membantu menjaga konsistensi struktur proyek, memudahkan kolaborasi tim, dan memastikan semua dependensi terkelola dengan baik. Ini juga mempermudah deployment dan reproduksi environment di mesin lain.
+   
     Langkah-langkah:
     1. Pastikan environment UV sudah aktif
     2. Ketik: uv init ghost_intellixuv
@@ -182,7 +183,7 @@ Langkah-langkah:
     - Jangan menyimpan data sensitif di direktori proyek
     - Jangan mengubah struktur folder setelah proyek berjalan
 
-3. Install Paket yang Dibutuhkan
+4. Install Paket yang Dibutuhkan
     Apa?
     Memasang library yang diperlukan untuk proyek UV.
     
@@ -191,6 +192,7 @@ Langkah-langkah:
     
     Langkah-langkah:
     1.	Ketik: uv add pandas
+       
     Do's:
     - Install hanya paket yang diperlukan
     - Periksa versi paket yang kompatibel
@@ -200,7 +202,7 @@ Langkah-langkah:
     - Jangan campur UV dan pip.
 
  
-4. Menonaktifkan Lingkungan UV
+5. Menonaktifkan Lingkungan UV
     Apa?
     Nonaktifkan environment uv_env apabila sudah selesai menggunakan.
 
@@ -218,7 +220,7 @@ Langkah-langkah:
     - Jangan tinggal aktif tanpa alasan.
     
   
-5. Perbandingan Conda vs UV
+6. Perbandingan Conda vs UV
     Apa?
     Membandingkan manajemen environment Conda dengan framework UV (asumsi UV adalah sistem manajemen environment atau framework spesifik).
 
@@ -237,7 +239,7 @@ Langkah-langkah:
     - Jangan mencampur konfigurasi environment yang berbeda tanpa sinkronisasi.
     
   
-6. Daftar Paket yang Direkomendasikan untuk UV Environment
+7. Daftar Paket yang Direkomendasikan untuk UV Environment
     Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
     - numpy
     - pandas
@@ -256,28 +258,28 @@ Langkah-langkah:
 
   
 
-7. Panduan Pemecahan Masalah pada Conda dan UV
+8. Panduan Pemecahan Masalah pada Conda dan UV
     Masalah umum dan solusinya:
     Masalah 1: Perintah Conda Tidak Dikenali
     Gejala: 'conda' is not recognized
     Solusi:
-    1.	Verifikasi instalasi Anaconda.
-    2.	Periksa PATH.
-    3.	Jalankan conda init cmd.exe, mulai ulang terminal.
+   	- Verifikasi instalasi Anaconda.
+   	- Periksa PATH.
+   	- Jalankan conda init cmd.exe, mulai ulang terminal.
 
     Masalah 2: Aktivasi Lingkungan Gagal
     Gejala: Script execution is disabled
     Solusi:
-    1.	Jalankan PowerShell sebagai Administrator.
-    2.	Ketik Set-ExecutionPolicy RemoteSigned.
-    3.	Pilih "Y".
+   	- Jalankan PowerShell sebagai Administrator.
+   	- Ketik Set-ExecutionPolicy RemoteSigned.
+   	- Pilih "Y".
 
     Masalah 3: Kesalahan Instalasi Paket
     Gejala: Could not find a version
     Solusi:
-    1.	Perbarui pip: python -m pip install --upgrade pip.
-    2.	Periksa kompatibilitas Python.
-    3.	Coba versi paket lain.
+   	- Perbarui pip: python -m pip install --upgrade pip.
+   	- Periksa kompatibilitas Python.
+   	- Coba versi paket lain.
 
     Do's:
     - Selalu baca dokumentasi dan pesan error.
@@ -295,16 +297,7 @@ Langkah-langkah:
 Perintah-perintah Penting
 Berikut beberapa perintah penting untuk mengelola environment:
 
---------------------------------------------------------------------------------------------------------
-| Perintah        	               | Fungsi	                            | Contoh                        |
---------------------------------------------------------------------------------------------------------
-| conda list	                   | Menampilkan semua paket terinstall	| conda list                    |
-| conda env list	               | Menampilkan semua environment	    | conda env list                |
-| conda deactivate	               | Keluar dari environment	        | conda deactivate              |
-| conda remove -n env_name --all   | Menghapus environment	            | conda remove -n uv_env --all  |
-| conda env export > env.yml	   | Ekspor environment	                | conda env export > uv_env.yml |
-| conda env create -f env.yml	   | Import environment	                | conda env create -f uv_env.yml|
--------------------------------------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/5eec8061-abef-4564-b5eb-31bb6c6bcad6)
 
 ---
 
