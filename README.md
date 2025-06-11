@@ -145,6 +145,7 @@ Don'ts:
 ## 🧪 Bagian 2: Membuat UV Environment
 
 **1. Buat Environment Baru**
+	---
     **Apa**
     Membuat environment terisolasi untuk proyek UV.
     **Kenapa**
@@ -164,6 +165,7 @@ Don'ts:
     - Jangan membuat terlalu banyak environment yang tidak perlu
 
 **2. Menginisialisasi Proyek UV**
+	---
     **Apa?**
     Menginisialisasi Proyek UV adalah proses mempersiapkan struktur direktori dan file konfigurasi dasar untuk proyek yang akan menggunakan UV environment. Ini termasuk membuat file requirements, struktur folder, dan konfigurasi dasar proyek.
     **Kenapa?**
@@ -188,6 +190,7 @@ Don'ts:
     - Jangan mengubah struktur folder setelah proyek berjalan
 
 **4. Install Paket yang Dibutuhkan**
+	---
     **Apa?**
     Memasang library yang diperlukan untuk proyek UV.
     **Kenapa?** 
@@ -206,6 +209,7 @@ Don'ts:
 
  
 **5. Menonaktifkan Lingkungan UV**
+	---
     **Apa?**
     Nonaktifkan environment uv_env apabila sudah selesai menggunakan.
     **Kenapa?**
@@ -223,6 +227,7 @@ Don'ts:
     
   
 **6. Perbandingan Conda vs UV**
+	---
     **Apa?**
     Membandingkan manajemen environment Conda dengan framework UV (asumsi UV adalah sistem manajemen environment atau framework spesifik).
     **Kenapa?**
@@ -241,8 +246,8 @@ Don'ts:
     
   
 **7. Daftar Paket yang Direkomendasikan untuk UV Environment**
-
-Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
+	---
+     Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
     - numpy
     - pandas
     - matplotlib
