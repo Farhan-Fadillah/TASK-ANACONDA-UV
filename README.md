@@ -241,7 +241,8 @@ Don'ts:
     
   
 **7. Daftar Paket yang Direkomendasikan untuk UV Environment**
-    Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
+
+Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
     - numpy
     - pandas
     - matplotlib
