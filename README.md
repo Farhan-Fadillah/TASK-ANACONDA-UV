@@ -49,7 +49,6 @@ UV adalah alat manajemen lingkungan Python yang memungkinkan pembuatan, pengelol
 **1. Download Installer Anaconda**
    **Apa**
    File installer untuk memasang Anaconda ke komputer Anda.
-
    **Kenapa**
    Anaconda menyediakan Python dan paket data science siap pakai dalam satu instalasi.
 
@@ -68,7 +67,6 @@ Don'ts:
 **2. Jalankan Installer Anaconda**
    **Apa**
    Proses pemasangan Anaconda ke sistem Anda.
-
    **Kenapa**
    Untuk mendapatkan Python dan semua paket data science yang dibutuhkan.
 
@@ -86,7 +84,6 @@ Don'ts:
 **4. Verifikasi Anaconda Terinstall dan Dapat Diakses**
     **Apa?**
     Verifikasi ini memastikan bahwa Anaconda sudah benar-benar terpasang dan bisa dipanggil dari terminal.
-
     **Kenapa?**
     Agar kita tidak menemui masalah di langkah selanjutnya saat menggunakan conda atau Python dari Anaconda.
 
@@ -104,7 +101,6 @@ Don'ts:
 **5. Konfigurasi Variabel Lingkungan PATH Conda dan Anaconda**
     **Apa?**
     Pengaturan variabel lingkungan PATH supaya perintah conda dan python dari Anaconda dapat diakses dari terminal manapun.
-
     **Kenapa?**
     Agar kita tidak harus selalu membuka Anaconda Navigator atau terminal khusus untuk menjalankan conda atau Python.
 
@@ -129,13 +125,11 @@ Don'ts:
 **6. Membuat Lingkungan Conda Baru**
     **Apa?**
     Membuat environment Conda baru adalah membuat ruang kerja terpisah untuk project yang berbeda.
-
     **Kenapa?**
     Untuk menghindari bentrok antar versi Python atau paket yang digunakan oleh berbagai proyek.
 
     Langkah-langkah:
-   -  Jalankan perintah berikut di terminal: conda create -n nama_env python=3.9
-
+    - Jalankan perintah berikut di terminal: conda create -n nama_env python=3.9
  
 
     Do's:
@@ -150,9 +144,11 @@ Don'ts:
 
 ## 🧪 Bagian 2: Membuat UV Environment
 
-1. Buat Environment Baru
-    Apa: Membuat environment terisolasi untuk proyek UV.
-    Kenapa: Agar dependensi proyek tidak bentrok dengan proyek lain.
+**1. Buat Environment Baru**
+    **Apa**
+    Membuat environment terisolasi untuk proyek UV.
+    **Kenapa**
+    Agar dependensi proyek tidak bentrok dengan proyek lain.
 
     Langkah-langkah:
     1.	Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate jika perlu).
@@ -167,11 +163,10 @@ Don'ts:
     - Jangan gunakan environment base untuk proyek
     - Jangan membuat terlalu banyak environment yang tidak perlu
 
-2. Menginisialisasi Proyek UV
-    Apa?
+**2. Menginisialisasi Proyek UV**
+    **Apa?**
     Menginisialisasi Proyek UV adalah proses mempersiapkan struktur direktori dan file konfigurasi dasar untuk proyek yang akan menggunakan UV environment. Ini termasuk membuat file requirements, struktur folder, dan konfigurasi dasar proyek.
-    
-    Kenapa?
+    **Kenapa?**
     Inisialisasi proyek yang benar membantu menjaga konsistensi struktur proyek, memudahkan kolaborasi tim, dan memastikan semua dependensi terkelola dengan baik. Ini juga mempermudah deployment dan reproduksi environment di mesin lain.
    
     Langkah-langkah:
@@ -192,11 +187,10 @@ Don'ts:
     - Jangan menyimpan data sensitif di direktori proyek
     - Jangan mengubah struktur folder setelah proyek berjalan
 
-4. Install Paket yang Dibutuhkan
-    Apa?
+**4. Install Paket yang Dibutuhkan**
+    **Apa?**
     Memasang library yang diperlukan untuk proyek UV.
-    
-    Kenapa? 
+    **Kenapa?** 
     Untuk mendapatkan fungsi-fungsi yang dibutuhkan dalam pengembangan.
     
     Langkah-langkah:
@@ -211,11 +205,10 @@ Don'ts:
     - Jangan campur UV dan pip.
 
  
-5. Menonaktifkan Lingkungan UV
-    Apa?
+**5. Menonaktifkan Lingkungan UV**
+    **Apa?**
     Nonaktifkan environment uv_env apabila sudah selesai menggunakan.
-
-    Kenapa?
+    **Kenapa?**
     Agar shell kembali ke environment base atau default.
 
     Langkah-langkah:
@@ -229,11 +222,10 @@ Don'ts:
     - Jangan tinggal aktif tanpa alasan.
     
   
-6. Perbandingan Conda vs UV
-    Apa?
+**6. Perbandingan Conda vs UV**
+    **Apa?**
     Membandingkan manajemen environment Conda dengan framework UV (asumsi UV adalah sistem manajemen environment atau framework spesifik).
-
-    Kenapa?
+    **Kenapa?**
     Agar memudahkan pemilihan tools sesuai kebutuhan.
 
     Detail:
@@ -248,7 +240,7 @@ Don'ts:
     - Jangan mencampur konfigurasi environment yang berbeda tanpa sinkronisasi.
     
   
-7. Daftar Paket yang Direkomendasikan untuk UV Environment
+**7. Daftar Paket yang Direkomendasikan untuk UV Environment**
     Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
     - numpy
     - pandas
@@ -267,7 +259,8 @@ Don'ts:
 
   
 
-8. Panduan Pemecahan Masalah pada Conda dan UV
+**8. Panduan Pemecahan Masalah pada Conda dan UV**
+
     Masalah umum dan solusinya:
     Masalah 1: Perintah Conda Tidak Dikenali
     Gejala: 'conda' is not recognized
