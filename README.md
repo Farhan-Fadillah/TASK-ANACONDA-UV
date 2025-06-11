@@ -56,11 +56,13 @@ UV adalah alat manajemen lingkungan Python yang memungkinkan pembuatan, pengelol
     - Buka https://www.anaconda.com/products/distribution
     - Pilih versi sesuai OS Anda (Windows/macOS/Linux)
     - Klik tombol Download
+
+![image](https://github.com/user-attachments/assets/901655f0-1af9-4488-95aa-1ad47e7f3c1f)
    
    Do's:
 	- Download dari situs resmi Anaconda
 	- Simpan installer di folder yang mudah diakses
-Don'ts:
+   Don'ts:
 	- Jangan download dari sumber tidak resmi
 	- Jangan simpan di folder system
 
@@ -74,6 +76,9 @@ Don'ts:
 	- Buka file installer yang sudah didownload
 	- Ikuti wizard instalasi
 	- Pilih opsi "Add Anaconda to PATH" (opsional)
+
+![image](https://github.com/user-attachments/assets/5f595980-7491-4c59-89c5-2f13c614ba8f)
+ 
    Do's:
 	- Gunakan pengaturan default jika tidak yakin
 	- Centang opsi PATH jika ingin bisa diakses dari terminal manapun
@@ -81,7 +86,7 @@ Don'ts:
 	- Jangan ubah direktori instalasi ke folder sistem
 	- Jangan batalkan proses instalasi di tengah jalan
 
-**4. Verifikasi Anaconda Terinstall dan Dapat Diakses**
+**3. Verifikasi Anaconda Terinstall dan Dapat Diakses**
     **Apa?**
     Verifikasi ini memastikan bahwa Anaconda sudah benar-benar terpasang dan bisa dipanggil dari terminal.
     **Kenapa?**
@@ -92,13 +97,15 @@ Don'ts:
     2. Ketik perintah:
        conda --version
     3. Jika muncul versi conda, instalasi sudah sukses.
+
+![image](https://github.com/user-attachments/assets/e1a4a445-fc96-4e90-b66a-7975f39b1cdd)
     
     Do's:
     - Gunakan terminal baru setelah instalasi untuk memastikan variabel PATH terbaru terbaca   - Pastikan perintah dijalankan tanpa error.
     Don'ts:
     - Jangan abaikan error atau tidak muncul versi, cek pemasangan kembali.
 
-**5. Konfigurasi Variabel Lingkungan PATH Conda dan Anaconda**
+**4. Konfigurasi Variabel Lingkungan PATH Conda dan Anaconda**
     **Apa?**
     Pengaturan variabel lingkungan PATH supaya perintah conda dan python dari Anaconda dapat diakses dari terminal manapun.
     **Kenapa?**
@@ -113,6 +120,8 @@ Don'ts:
     6. Tambahkan (ganti NAMA_ANDA):
     7. Klik Ok
 
+![image](https://github.com/user-attachments/assets/f503738e-510e-419e-9a72-dce9d00fd668)
+
     Do's:
     - Pastikan sudah menutup dan membuka terminal baru setelah konfigurasi.
     - Restart komputer jika perlu.
@@ -122,7 +131,7 @@ Don'ts:
     - Hati-hati saat edit variabel lingkungan.
     
   
-**6. Membuat Lingkungan Conda Baru**
+**5. Membuat Lingkungan Conda Baru**
     **Apa?**
     Membuat environment Conda baru adalah membuat ruang kerja terpisah untuk project yang berbeda.
     **Kenapa?**
@@ -131,6 +140,7 @@ Don'ts:
     Langkah-langkah:
     - Jalankan perintah berikut di terminal: conda create -n nama_env python=3.9
  
+![image](https://github.com/user-attachments/assets/d70ace8b-3a0c-45b6-85a5-cf87a575e5da)
 
     Do's:
     - Gunakan nama environment yang deskriptif dan mudah diingat.
@@ -145,9 +155,10 @@ Don'ts:
 ## 🧪 Bagian 2: Membuat UV Environment
 
 **1. Buat Environment Baru**
-	---
+
     **Apa**
     Membuat environment terisolasi untuk proyek UV.
+    
     **Kenapa**
     Agar dependensi proyek tidak bentrok dengan proyek lain.
 
@@ -156,7 +167,9 @@ Don'ts:
     2.	Ketik: pip install uv
     3.	Output seperti Successfully installed uv-0.7.12 menunjukkan keberhasilan.
     4.	Catatan tentang folder ghost_intellixuv: Folder ghost_intellixuv akan dibuat di langkah berikutnya  menggunakan uv init. Perintah ini otomatis membuat folder jika belum ada, karena UV dirancang untuk menginisialisasi direktori proyek baru secara langsung. Anda tidak perlu membuat folder ini secara manual sebelum menjalankan uv init. Untuk memverifikasi folder setelah inisialisasi, ketik dir di CMD untuk melihat daftar direktori.
- 
+
+![image](https://github.com/user-attachments/assets/a5a483b1-87a4-4c7e-90ce-dcf3ee9943a7)
+
     Do's:
     - Beri nama environment yang deskriptif
     - Gunakan versi Python yang kompatibel
@@ -165,9 +178,10 @@ Don'ts:
     - Jangan membuat terlalu banyak environment yang tidak perlu
 
 **2. Menginisialisasi Proyek UV**
-	---
+
     **Apa?**
     Menginisialisasi Proyek UV adalah proses mempersiapkan struktur direktori dan file konfigurasi dasar untuk proyek yang akan menggunakan UV environment. Ini termasuk membuat file requirements, struktur folder, dan konfigurasi dasar proyek.
+    
     **Kenapa?**
     Inisialisasi proyek yang benar membantu menjaga konsistensi struktur proyek, memudahkan kolaborasi tim, dan memastikan semua dependensi terkelola dengan baik. Ini juga mempermudah deployment dan reproduksi environment di mesin lain.
    
@@ -176,6 +190,8 @@ Don'ts:
     2. Ketik: uv init ghost_intellixuv
                Cd ghost intellixuv
     3. Output menunjukkan proyek diinisialisasi di C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv.
+
+![image](https://github.com/user-attachments/assets/17276dad-204c-4b2c-a3ef-e68214691642)
  
     Do's:
     - Gunakan struktur folder yang konsisten
@@ -190,15 +206,18 @@ Don'ts:
     - Jangan mengubah struktur folder setelah proyek berjalan
 
 **4. Install Paket yang Dibutuhkan**
-	---
+
     **Apa?**
     Memasang library yang diperlukan untuk proyek UV.
+    
     **Kenapa?** 
     Untuk mendapatkan fungsi-fungsi yang dibutuhkan dalam pengembangan.
     
     Langkah-langkah:
     1.	Ketik: uv add pandas
-       
+
+![image](https://github.com/user-attachments/assets/61291641-7c48-4db3-b2b4-21958b056d76)
+
     Do's:
     - Install hanya paket yang diperlukan
     - Periksa versi paket yang kompatibel
@@ -209,15 +228,18 @@ Don'ts:
 
  
 **5. Menonaktifkan Lingkungan UV**
-	---
+ 
     **Apa?**
     Nonaktifkan environment uv_env apabila sudah selesai menggunakan.
+    
     **Kenapa?**
     Agar shell kembali ke environment base atau default.
 
     Langkah-langkah:
     1.	Ketik: .venv\Scripts\deactivate
     2.	Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix\ghost_intellixuv>.
+
+![image](https://github.com/user-attachments/assets/6017c6a5-06bb-4376-8248-d46fae0aece4)
 
     Do's:
     - Selalu deactivate ketika berpindah konteks.
@@ -226,16 +248,19 @@ Don'ts:
     - Jangan tinggal aktif tanpa alasan.
     
   
-**6. Perbandingan Conda vs UV**
-	---
+**6. Perbandingan Conda vs UV**	
+
     **Apa?**
     Membandingkan manajemen environment Conda dengan framework UV (asumsi UV adalah sistem manajemen environment atau framework spesifik).
+    
     **Kenapa?**
     Agar memudahkan pemilihan tools sesuai kebutuhan.
-
+    
     Detail:
     - Conda: manajemen environment dan paket secara umum, lintas proyek.
     - UV: environment/framework yang lebih spesifik untuk proyek tertentu, mungkin terkait AI.
+
+![image](https://github.com/user-attachments/assets/d4e68cf5-e066-44b5-bfb6-f070e9b755f1)
 
     Do's:
     - Gunakan Conda untuk manajemen environment yang luas.
@@ -246,7 +271,7 @@ Don'ts:
     
   
 **7. Daftar Paket yang Direkomendasikan untuk UV Environment**
-	---
+	
      Berikut daftar paket yang umum dan direkomendasikan dalam environment UV untuk data science dan machine learning:
     - numpy
     - pandas
@@ -255,6 +280,8 @@ Don'ts:
     - jupyter
     - seaborn
     - tensorflow atau pytorch (sesuai kebutuhan)
+
+![image](https://github.com/user-attachments/assets/5020c54f-75e8-4036-b76f-d8882d712733)
 
     Do's:
     - Instal paket sesuai kebutuhan proyek.
